@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section>
+    <h2>{% if form.instance.pk %}Edit{% else %}Create{% endif %} Sticky</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 20px;">
+            <button type="submit" style="background-color: #ffc107; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 16px; line-height: 1.5; height: 40px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; margin: 0; vertical-align: middle;">Save</button>
+            <a href="{% url 'sticky_list' %}" style="background-color: #ffc107; color: black; text-decoration: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 16px; line-height: 1.5; height: 40px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; margin: 0; vertical-align: middle;">Cancel</a>
+        </div>
+    </form>
+</section>
+{% endblock %}

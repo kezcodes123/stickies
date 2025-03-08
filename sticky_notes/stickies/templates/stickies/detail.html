@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section>
+    <h2>{{ sticky.name }}</h2>
+    <p>{{ sticky.description }}</p>
+    <a href="{% url 'edit_sticky' sticky.pk %}">Edit</a>
+    <a href="{% url 'delete_sticky' sticky.pk %}">Delete</a>
+    <a href="{% url 'sticky_list' %}">Back to list</a>
+</section>
+{% endblock %}

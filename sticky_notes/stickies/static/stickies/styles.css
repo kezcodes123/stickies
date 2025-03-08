@@ -1,0 +1,193 @@
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 2rem;
+}
+
+/* Container styling */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header styling */
+header {
+    background-color: #ffc107;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    color: #212529;
+}
+
+/* Main content styling */
+main {
+    padding: 1rem;
+}
+
+section {
+    width: 100%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #495057;
+}
+
+/* Sticky notes styling */
+.sticky-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.sticky-item {
+    background-color: #fff9c4;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    min-height: 150px;
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+}
+
+.sticky-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.sticky-item h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.sticky-item p {
+    color: #495057;
+}
+
+/* Form styling */
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form button {
+    display: block;
+    margin: 1.5rem auto 0;
+}
+
+/* Action buttons */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.action-buttons a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ffc107;
+    color: #212529;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.action-buttons a:hover {
+    background-color: #e0a800;
+    text-decoration: none;
+}
+
+/* "Create new" button */
+.create-new-btn {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto;
+    padding: 0.5rem 1.5rem;
+    background-color: #28a745;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.create-new-btn:hover {
+    background-color: #218838;
+    text-decoration: none;
+}
+
+
+/* Form field alignment */
+form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+form p label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+form p input, form p textarea {
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+/* Button group for form actions */
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.form-buttons button,
+.form-buttons a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.form-buttons button {
+    background-color: #ffc107;
+    border: none;
+    color: #212529;
+    cursor: pointer;
+}
+
+.form-buttons button:hover {
+    background-color: #e0a800;
+}
+
+.form-buttons a {
+    background-color: #6c757d;
+    color: white;
+}
+
+.form-buttons a:hover {
+    background-color: #5a6268;
+}

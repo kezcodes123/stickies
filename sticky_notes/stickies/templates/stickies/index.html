@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section>
+    <h2>{{ page_title }}</h2>
+    <div class="sticky-list">
+        {% for sticky in stickies %}
+        <div class="sticky-item">
+            <h3>
+                <a href="{% url 'sticky_view' sticky.pk %}">{{ sticky.name }}</a>
+            </h3>
+            <p>{{ sticky.description|truncatechars:100 }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <a href="{% url 'create_sticky' %}" class="create-new-btn">Create a new sticky</a>
+</section>
+{% endblock %}
+
+
